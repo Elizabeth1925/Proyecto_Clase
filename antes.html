@@ -1,48 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Ejemplo APE 5 - ANTES (Mal Diseño)</title>
-    <!-- MALA PRÁCTICA: Falta la etiqueta meta viewport para escalar en móviles -->
-    <link rel="stylesheet" href="css/bad-styles.css">
+    <meta charset="UTF-8">
+    <!-- LA FALLA ESTÁ AQUÍ: Se eliminó intencionalmente la etiqueta <meta name="viewport"> que hace que la pantalla escale en móviles -->
+    <title>Ejemplo APE 5 - Escritorio (NO RESPONSIVE)</title>
+    <link rel="stylesheet" href="css/desktop-only.css">
 </head>
 <body>
-    <!-- MALA PRÁCTICA: Uso de 'divs' para todo (Div Soup) en lugar de semántica HTML5 -->
-    <div id="header">
-        <div id="logo">MiApp HCI - Grupo 4 (ANTES)</div>
-        <div id="menu">
-            <!-- MALA PRÁCTICA: Enlaces muy pequeños y demasiado juntos (Viola Ley de Fitts) -->
-            <a href="#">Inicio</a>
-            <a href="#">Características</a>
-            <a href="#">Contacto</a>
-        </div>
-    </div>
+    <header>
+        <nav class="navbar">
+            <div class="logo">MiApp HCI - Grupo 4 (Antes)</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div id="content">
-        <div class="banner">
-            <h1>Diseño No Adaptativo (Sin Principios HCI)</h1>
-            <p>Esta interfaz no es responsiva. En un celular tendrás que hacer zoom para leer el texto o hacer scroll horizontal.</p>
-            <!-- MALA PRÁCTICA: Botón táctil demasiado pequeño -->
-            <div class="boton">Empezar el Reto</div>
-        </div>
+    <main role="main" aria-label="Contenido principal">
+        <section id="inicio" class="hero">
+            <h1>Diseño Desktop (Con Principios IHC)</h1>
+            <p>En una computadora este diseño tiene contraste correcto, semántica y botones grandes.<br>Pero si lo abres en un celular, pierde toda su usabilidad IHC.</p>
+            <button class="cta-button">Empezar el Reto</button>
+        </section>
 
-        <div class="cajas">
-            <div class="caja-mala">
-                <b>No hay Semántica</b>
-                <p>Todo está hecho con divs genéricos, lo que afecta la accesibilidad.</p>
-            </div>
-            <div class="caja-mala">
-                <b>Ancho Fijo (Desktop Only)</b>
-                <p>El diseño tiene un ancho fijo de 1200px que rompe la pantalla de cualquier teléfono.</p>
-            </div>
-            <div class="caja-mala">
-                <b>Mal Contraste</b>
-                <p>Es difícil leer este texto gris claro sobre el fondo, lo que cansa la vista.</p>
-            </div>
-        </div>
-    </div>
+        <section id="caracteristicas" class="features">
+            <article class="card">
+                <h2>1. Buen Contraste</h2>
+                <p>Cumple con IHC visual, pero no se adapta.</p>
+            </article>
+            <article class="card">
+                <h2>2. Semántica HTML5</h2>
+                <p>Estructura correcta (header, main), pero de nada sirve si el usuario no puede leer en su celular.</p>
+            </article>
+            <article class="card">
+                <h2>3. El Problema</h2>
+                <p>Al encoger la pantalla, el texto y los botones se vuelven enanos, violando la Ley de Fitts táctil.</p>
+            </article>
+        </section>
+    </main>
 
-    <div id="footer">
-        Copyright 2026 Grupo 4.
-    </div>
+    <footer>
+        <p>&copy; 2026 Grupo 4 - Interacción Humano Computador. UTA.</p>
+    </footer>
 </body>
 </html>
