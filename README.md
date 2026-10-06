@@ -28,6 +28,5 @@ Se utiliza un enfoque **"Mobile First"**, adaptando la disposiciÃ³n de los eleme
 * **HTML5:** Estructura y semÃ¡ntica
 * **CSS3:** Flexbox, CSS Variables, Media Queries
 
-
-## ?? Metodología de Demostración
-Durante la clase se realizará una demostración contrastando la interfaz estática (\ntes.html\) frente al modelo Mobile First (\index.html\) para visibilizar la pérdida de principios de usabilidad en dispositivos de pantallas pequeñas.
+## ğŸ­ MetodologÃ­a de DemostraciÃ³n
+Durante la clase se realizarÃ¡ una demostraciÃ³n contrastando la interfaz estÃ¡tica (`antes.html`) frente al modelo Mobile First (`index.html`) para visibilizar la pÃ©rdida de principios de usabilidad en dispositivos de pantallas pequeÃ±as.
