@@ -1,0 +1,145 @@
+/* Variables para mantener consistencia (HCI: prevención de errores y estándares) */
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --bg-color: #f8f9fa;
+    --text-color: #333333;
+    --card-bg: #ffffff;
+    --spacing-unit: 1rem;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* =========================================
+   1. DISEÑO MOBILE FIRST (Resoluciones pequeñas)
+   ========================================= */
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--spacing-unit);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-links li {
+    width: 100%;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 12px 0;
+    /* HCI: Área de toque grande (Ley de Fitts) para dedos en móviles */
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #eaeff2;
+}
+
+.cta-button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 15px 24px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    /* HCI: Botón ancho en móvil para fácil acceso táctil */
+    width: 100%; 
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    margin-top: 2rem;
+}
+
+/* =========================================
+   2. MEDIA QUERIES (Tablets y Desktop)
+   ========================================= */
+
+@media (min-width: 768px) {
+    /* Cambio a disposición horizontal en Desktop */
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        width: auto;
+        gap: 20px;
+    }
+
+    .nav-links a {
+        border-bottom: none;
+        padding: 5px 10px;
+    }
+
+    .features {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+    .card {
+        flex: 1; /* Distribución equitativa */
+    }
+    
+    .cta-button {
+        /* El botón ya no necesita ocupar todo el ancho con un mouse */
+        width: auto; 
+    }
+}
