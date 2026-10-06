@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo APE 5 - ANTES (Mal Diseño)</title>
+    <!-- MALA PRÁCTICA: Falta la etiqueta meta viewport para escalar en móviles -->
+    <link rel="stylesheet" href="css/bad-styles.css">
+</head>
+<body>
+    <!-- MALA PRÁCTICA: Uso de 'divs' para todo (Div Soup) en lugar de semántica HTML5 -->
+    <div id="header">
+        <div id="logo">MiApp HCI - Grupo 4 (ANTES)</div>
+        <div id="menu">
+            <!-- MALA PRÁCTICA: Enlaces muy pequeños y demasiado juntos (Viola Ley de Fitts) -->
+            <a href="#">Inicio</a>
+            <a href="#">Características</a>
+            <a href="#">Contacto</a>
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="banner">
+            <h1>Diseño No Adaptativo (Sin Principios HCI)</h1>
+            <p>Esta interfaz no es responsiva. En un celular tendrás que hacer zoom para leer el texto o hacer scroll horizontal.</p>
+            <!-- MALA PRÁCTICA: Botón táctil demasiado pequeño -->
+            <div class="boton">Empezar el Reto</div>
+        </div>
+
+        <div class="cajas">
+            <div class="caja-mala">
+                <b>No hay Semántica</b>
+                <p>Todo está hecho con divs genéricos, lo que afecta la accesibilidad.</p>
+            </div>
+            <div class="caja-mala">
+                <b>Ancho Fijo (Desktop Only)</b>
+                <p>El diseño tiene un ancho fijo de 1200px que rompe la pantalla de cualquier teléfono.</p>
+            </div>
+            <div class="caja-mala">
+                <b>Mal Contraste</b>
+                <p>Es difícil leer este texto gris claro sobre el fondo, lo que cansa la vista.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        Copyright 2026 Grupo 4.
+    </div>
+</body>
+</html>

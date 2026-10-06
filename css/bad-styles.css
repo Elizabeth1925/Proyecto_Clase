@@ -1,0 +1,84 @@
+/* Estilos estáticos orientados solo a Desktop (Mala Práctica) */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* MALA PRÁCTICA: Ancho fijo forzado, genera barra de desplazamiento horizontal en móviles */
+    width: 1200px; 
+}
+
+#header {
+    background-color: #e0e0e0;
+    color: #333333;
+    padding: 10px;
+    height: 50px;
+}
+
+#logo {
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#menu {
+    float: right;
+}
+
+#menu a {
+    color: blue;
+    /* MALA PRÁCTICA: Texto muy pequeño */
+    font-size: 11px; 
+    /* MALA PRÁCTICA: Enlaces muy juntos, difícil de clickear en táctil (Ley de Fitts) */
+    margin-left: 5px; 
+}
+
+#content {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.banner {
+    text-align: left;
+    padding: 10px;
+}
+
+.banner p {
+    font-size: 12px;
+    /* MALA PRÁCTICA: Mal contraste (texto gris claro en fondo blanco) */
+    color: #b0b0b0; 
+}
+
+.boton {
+    background-color: green;
+    color: white;
+    padding: 5px;
+    font-size: 10px;
+    /* MALA PRÁCTICA: Botón muy pequeño para ser un objetivo táctil cómodo */
+    width: 100px; 
+    cursor: pointer;
+    text-align: center;
+}
+
+.cajas {
+    margin-top: 50px;
+}
+
+.caja-mala {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+    border: 1px solid black;
+    padding: 15px;
+    /* MALA PRÁCTICA: Mal contraste visual */
+    color: #999999; 
+    font-size: 12px;
+}
+
+#footer {
+    clear: both;
+    margin-top: 150px;
+    font-size: 10px;
+    text-align: center;
+    color: #555555;
+}
