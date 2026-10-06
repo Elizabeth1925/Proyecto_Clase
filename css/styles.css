@@ -143,3 +143,6 @@ footer {
         width: auto; 
     }
 }
+
+/* HCI: Scroll suave para mejor experiencia */
+html { scroll-behavior: smooth; }
