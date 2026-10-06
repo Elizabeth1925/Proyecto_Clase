@@ -30,3 +30,7 @@ Se utiliza un enfoque **"Mobile First"**, adaptando la disposición de los eleme
 
 ## 🎭 Metodología de Demostración
 Durante la clase se realizará una demostración contrastando la interfaz estática (`antes.html`) frente al modelo Mobile First (`index.html`) para visibilizar la pérdida de principios de usabilidad en dispositivos de pantallas pequeñas.
+
+## 📸 Evidencias de Interacción (IHC)
+- *[Vista Escritorio]* (Subir imagen a assets/img/desktop.png)
+- *[Vista Móvil]* (Subir imagen a assets/img/mobile.png)
