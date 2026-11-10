@@ -8,18 +8,6 @@ Material de referencia para la demostración en clase sobre **HTML5/CSS, estruct
 - **Verónica Jaque:** CSS3, Flexbox, Grid y dinámica Batalla CSS.
 - **Sebastián Vaca:** responsive, Mobile First, accesibilidad y repaso final.
 
-## Navegación rápida
-
-| Recurso | Enlace | Uso |
-|---|---|---|
-| Plan de ambas clases | [Planificación](planificacion/PLAN_DE_CLASES.md) | Cronograma y responsables |
-| Temario de estudio | [Clase 1](clase-1/README.md) | Conceptos y presentación |
-| Presentación editable | [PPTX](clase-1/presentacion/Clase_1_Interfaces_Web_Moviles.pptx) | Importar a Canva o abrir en PowerPoint |
-| Actividades interactivas | [Dinámicas](dinamicas/README.md) | Juegos HTML en navegador |
-| Taller de la clase 2 | [Clase 2](clase-2/README.md) | Requisitos y entregables |
-| Código del reto | [Tienda Aula](clase-2/taller-responsive/index.html) | Página inicial a mejorar |
-| Checklist de requisitos | [Checklist](planificacion/CHECKLIST_APE5.md) | Seguimiento y revisión docente |
-| Evidencias | [Registro](evidencias/README.md) | Capturas, pruebas y commits |
 
 ## 🚀 Reto de Transformación
 **Pregunta para la clase:** *"¿Cómo convertirían este diseño en una interfaz responsiva sin perder sus principios HCI?"*
